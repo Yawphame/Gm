@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Morning Nana 🤍</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
+        url("IMG_0232.jpeg") no-repeat center center / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 26px;
+      border-radius: 22px;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      color: #222;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .question {
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .heart {
+      font-size: 3.5rem;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: transform 0.25s ease;
+    }
+
+    .heart:active {
+      transform: scale(1.25);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 18px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .signature {
+      margin-top: 10px;
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Good morning Nana 🤍</h1>
+
+    <p>
+      Yesterday reminded me that misunderstandings can happen,
+      but what matters is how we handle them.
+    </p>
+
+    <p>
+      I appreciate us talking things through instead of letting
+      it become something bigger.
+    </p>
+
+    <p class="question">
+      Can we keep choosing understanding and us… every day?
+    </p>
+
+    <p>Tap the heart if your answer is yes ❤️</p>
+
+    <div class="heart" onclick="showReply()">❤️</div>
+
+    <div id="reply" class="hidden">
+      <p>
+        Thank you 🤍<br><br>
+        You’re really important to me, and I don’t take us for granted.<br>
+        No matter the little misunderstandings,
+        I’m still choosing you.
+      </p>
+
+      <p class="signature">— Always yours, Ben 🤍</p>
+    </div>
+  </div>
+
+  <script>
+    function showReply() {
+      document.getElementById("reply").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
