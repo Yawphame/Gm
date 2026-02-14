@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentine's Day 💘</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff4e50, #fc913a);
+            color: white;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        #yesBtn {
+            background-color: #00ff88;
+            color: black;
+        }
+
+        #noBtn {
+            background-color: #ff1744;
+            color: white;
+        }
+
+        #message {
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Happy Valentine’s Day My Love ❤️</h1>
+    <h2>Will You Always Be Mine? 💖</h2>
+
+    <button id="yesBtn" onclick="yesClicked()">YES 💖</button>
+    <button id="noBtn" onclick="noClicked()">NO 🙈</button>
+
+    <div id="message"></div>
+
+    <script>
+        function yesClicked() {
+            document.getElementById("message").innerHTML =
+            "You just made me the happiest person alive 😭❤️\n\n" +
+            "I see your efforts, your patience, your love… and I appreciate everything about you 🫂💞\n\n" +
+            "Having you in my life is a blessing and I’m so grateful for you every single day.\n\n" +
+            "I love you not just today, but always ❤️💍\n\n" +
+            "Screenshot this and send it to me my Valentine 😌📸";
+        }
+
+        function noClicked() {
+            document.getElementById("message").innerHTML =
+            "No?? 😭💔\n\n" +
+            "But you already said you love meee 🥺❤️\n\n" +
+            "I see your efforts and your sweet heart, and I’m grateful to have you in my life.\n\n" +
+            "So I’ll pretend you misclicked and give you another chance 😏💖\n\n" +
+            "Screenshot this and explain yourself 😂📸";
+        }
+    </script>
+
+</body>
+</html>
